@@ -23,6 +23,7 @@ services:
       APP_ENV: "dev"
       APP_SECRET: "b6275207a0c9efcb064a69b938501b3e"
       APP_HOSTNAME: "store.local"
+      MESSENGER_TRANSPORT_DSN: "doctrine://default?auto_setup=0"
   nginx:
     image: nginx:1.19
     ports:

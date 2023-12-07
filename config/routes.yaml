@@ -1,5 +1,9 @@
-controllers:
-    resource:
-        path: ../src/Controller/
-        namespace: App\Controller
-    type: attribute
+create_order:
+    path: /order/create
+    controller: 'App\Application\Order\Controller\OrderController::createOrder'
+    methods: ['POST']
+
+get_order:
+    path: /order/{id}
+    controller: 'App\Application\Order\Controller\OrderController::getOrder'
+    methods: ['GET']
